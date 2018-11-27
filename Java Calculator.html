@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+.buttons{
+	padding-left: 40%;
+	padding-top: 2%;
+	height: 200px;
+	width: 190px;
+}
+button{
+	height: 45px;
+	width :40px;
+}
+.input{
+	
+	border-radius: 20px;
+	margin-left:40%;
+	height: 50px;
+	width: 170px;
+}
+</style>
+  <body>	
+  			<input class="input" type="text" id="num">
+	  		<div class="buttons">
+			  <button onclick="one()">1</button>
+			  <button onclick="two()">2</button>
+			  <button onclick="three()">3</button>
+			  <button onclick="four()">4</button>
+			  <button onclick="five()">5</button>
+			  <button onclick="six()">6</button>
+			  <button onclick="seven()">7</button>
+			  <button onclick="eight()">8</button>
+			  <button onclick="nine()">9</button>
+			  <button onclick="zero()">0</button>
+
+			  <button onclick="add()">+</button>
+			  <button onclick="minus()">-</button>
+			  <button onclick="division()">/</button>
+			  <button onclick="multipy()">*</button>
+			  <button onclick="equals()">=</button>
+			  <button onclick="CA()">CA</button>
+
+		</div>	  
+	  <script type="text/javascript">
+
+		
+		  let n2 = 0;
+		  var funct = 0;
+
+
+		  function equals(){
+		  	let n1 = document.getElementById("num").value;
+
+		  	if(parseInt(funct) == 1){
+		  		let n1 = document.getElementById("num").value;
+		  		document.getElementById("num").value= parseInt(n1) + parseInt(n2);
+
+		  		}
+		  	else if(parseInt(funct) == 2){
+		  		let n1 = document.getElementById("num").value;
+		  		document.getElementById("num").value= parseInt(n2) - parseInt(n1);
+		  		}
+		  	else if(parseInt(funct) == 3){
+		  		let n1 = document.getElementById("num").value;
+		  		document.getElementById("num").value= parseInt(n2)  * parseInt(n1);
+		  		}
+		  	else if(parseInt(funct) == 4){
+		  		let n1 = document.getElementById("num").value;
+		  		document.getElementById("num").value= parseInt(n2)  / parseInt(n1);
+		  		}	
+
+		  	funct =0;
+
+		  }
+
+		  function add(){
+			n2 = document.getElementById("num").value;
+			document.getElementById("num").value = "";
+			funct =1;
+		  }
+		   function minus(){
+			n2 = document.getElementById("num").value;
+			document.getElementById("num").value = "";
+			funct =2;
+		  }
+		    function multipy(){
+			n2 = document.getElementById("num").value;
+			document.getElementById("num").value = "";
+			funct =3;
+		  }
+		    function division(){
+			n2 = document.getElementById("num").value;
+			document.getElementById("num").value = "";
+			funct =4;
+		  }
+		  function one(){
+			document.getElementById("num").value += 1;
+		  }
+		  
+		  function two(){
+		    document.getElementById("num").value += 2;
+		  }
+		   function three(){
+		    document.getElementById("num").value += 3;
+		  }
+		  function four(){
+		    document.getElementById("num").value += 4;
+		  }
+		  function five(){
+		    document.getElementById("num").value += 5;
+		  }
+		  function six(){
+		    document.getElementById("num").value += 6;
+		  }
+		  function seven(){
+		    document.getElementById("num").value += 7;
+		  }
+		  function eight(){
+		    document.getElementById("num").value += 8;
+		  }
+		  function nine(){
+		    document.getElementById("num").value += 9;
+		  }
+		  function zero(){
+		    document.getElementById("num").value += 0;
+		  }
+		   function CA(){
+	
+		    document.getElementById("num").value = value = "" ;
+		  }
+	  </script>
+  </body>
+ </head> 
+</html>
